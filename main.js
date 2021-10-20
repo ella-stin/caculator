@@ -5,7 +5,7 @@ const caculator = {
     minus: function(a,b) {
         console.log(a-b);
     },
-    multi: function(a,b) {
+    times: function(a,b) {
         console.log(a*b);
     },
     divide: function(a,b) {
@@ -18,6 +18,6 @@ const caculator = {
 
 caculator.plus(1,2);
 caculator.minus(1,2);
-caculator.multi(1,2);
+caculator.times(1,2);
 caculator.divide(1,2);
 caculator.power(1,2);
