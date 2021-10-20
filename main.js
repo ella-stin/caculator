@@ -1,23 +1,23 @@
 const caculator = {
     plus: function(a,b) {
-        console.log(a+b);
+        return a+b;
     },
     minus: function(a,b) {
-        console.log(a-b);
+        return a-b;
     },
     times: function(a,b) {
-        console.log(a*b);
+        return a*b;
     },
     divide: function(a,b) {
-        console.log(a/b);
+        return a/b;
     },
     power: function(a,b) {
-        console.log(a**b);
+        return a**b;
     }
 }
 
-caculator.plus(1,2);
-caculator.minus(1,2);
-caculator.times(1,2);
-caculator.divide(1,2);
-caculator.power(1,2);
+const plusResult = caculator.plus(1,2);
+const minusResult = caculator.minus(1,2);
+const timesResult = caculator.times(1,2);
+const divideResult = caculator.divide(1,2);
+const powerResult = caculator.power(1,2);
