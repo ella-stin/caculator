@@ -1,23 +1,45 @@
+const btnPlus = document.getElementById("btn-plus");
+const btnMinus = document.getElementById("btn-minus");
+const btnTimes = document.getElementById("btn-times");
+const btnDivide = document.getElementById("btn-divide");
+const btnPower = document.getElementById("btn-power");
+const result = document.getElementById("result");
+
+const num1 = document.querySelector("#num1 input");
+const num2 = document.querySelector("#num2 input");
+
+
 const caculator = {
     plus: function(a,b) {
-        return a+b;
+        a = Number(num1.value);
+        b = Number(num2.value);  
+       result.innerText = `The result is ${a+b}`;
     },
     minus: function(a,b) {
-        return a-b;
+        a = Number(num1.value);
+        b = Number(num2.value);  
+       result.innerText = `The result is ${a-b}`;
     },
     times: function(a,b) {
-        return a*b;
+        a = Number(num1.value);
+        b = Number(num2.value);  
+       result.innerText = `The result is ${a*b}`;
     },
     divide: function(a,b) {
-        return a/b;
+        a = Number(num1.value);
+        b = Number(num2.value);  
+       result.innerText = `The result is ${a/b}`;
     },
     power: function(a,b) {
-        return a**b;
+        a = Number(num1.value);
+        b = Number(num2.value);  
+       result.innerText = `The result is ${a**b}`;
     }
 }
 
-const plusResult = caculator.plus(1,2);
-const minusResult = caculator.minus(1,2);
-const timesResult = caculator.times(1,2);
-const divideResult = caculator.divide(1,2);
-const powerResult = caculator.power(1,2);
+btnPlus.addEventListener("click", caculator.plus);
+btnMinus.addEventListener("click", caculator.minus);
+btnTimes.addEventListener("click", caculator.times);
+btnDivide.addEventListener("click", caculator.divide);
+btnPower.addEventListener("click", caculator.power);
+
