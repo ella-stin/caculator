@@ -5,9 +5,8 @@ const btnDivide = document.getElementById("btn-divide");
 const btnPower = document.getElementById("btn-power");
 const result = document.getElementById("result");
 
-const num1 = document.querySelector("#num1 input");
-const num2 = document.querySelector("#num2 input");
-
+const num1 = document.querySelector(".input-number:nth-child(1) input");
+const num2 = document.querySelector(".input-number:nth-child(2) input");
 
 const caculator = {
     plus: function(a,b) {

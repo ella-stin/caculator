@@ -8,15 +8,26 @@
     <title>Caculator1</title>
 </head>
 <body>
+    <h2>Caculator</h2>
     <form id="input-form" onsubmit="return false;">
-      <div id="num1" >num1. <input type="text" /></div>
-      <div id="num2" >num2. <input type="text" /></div>
+      <div class="number__wrap">
+        <div class="input-number" >
+            <span>num1.</span> 
+            <input type="text" />
+        </div>
+        <div class="input-number" >
+            <span>num2. </span>
+            <input type="text" />
+        </div>
+      </div>
+      <div class="button__wrap">
 		<button id="btn-plus">+=</button>
 		<button id="btn-minus">-=</button>
 		<button id="btn-times">*=</button>
 		<button id="btn-divide">/=</button>
         <button id="btn-power">**=</button>
-        <div id="result"></div>
+    </div>
+    <div id="result"></div>
 	</form>
    <script src="main.js"></script> 
 </body>
