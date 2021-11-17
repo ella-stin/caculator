@@ -5,14 +5,29 @@ let op = prompt('What do you want?');
 let a = Number(inputNum1);
 let b = Number(inputNum2);
 
-if(op == '+' || op == '더하기') {
-alert(a + b);
-} else if (op == '-' || op == '빼기') {
-alert(a - b);
-} else if (op == '*'|| op == '곱하기'|| op == 'x') {
-alert(a * b);
-} else if (op =='/'|| op == '나누기') {
-alert(a / b);
-}
+let plusV = a + b;
+let minusV = a - b;
+let timesV = a * b;
+let divideV = a / b;
 
-// 오류 : 사용자가 문자값 입력시, NaN으로 출력된다.
+if(op == '+' || op == '더하기') {
+if(isNaN(plusV)) {
+alert('숫자를 입력하세요!');
+} else {
+alert(plusV);
+}} else if (op == '-' || op == '빼기') {
+if(isNaN(minusV)) {
+alert('숫자를 입력하세요!');
+} else {
+alert(minusV);
+}} else if (op == '*' || op == '곱하기'|| op == 'x') {
+if(isNaN(timesV)) {
+alert('숫자를 입력하세요!');
+} else {
+alert(timesV);
+}} else if (op == '/' || op == '나누기') {
+if(isNaN(divideV)) {
+alert('숫자를 입력하세요!');
+} else {
+alert(divideV);
+}}
